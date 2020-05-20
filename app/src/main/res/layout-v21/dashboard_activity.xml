@@ -7,7 +7,7 @@
     <LinearLayout
         android:id="@+id/lny_ContenedorPrincipal"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
         android:layout_gravity="center_horizontal"
         >
@@ -36,7 +36,6 @@
             android:layout_height="wrap_content"/>
         <ImageView
             android:id="@+id/img_User"
-            android:layout_alignParentRight="true"
             android:src="@drawable/ic_user_logout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -56,15 +55,15 @@
             android:columnOrderPreserved="false"
             android:alignmentMode="alignMargins">
 
-            <androidx.cardview.widget.CardView
-            android:id="@+id/cv_Infectados"
+            <androidx.cardview.widget.CardView 
+            android:id="@+id/cv_Infectados"    
             android:layout_marginTop="8dp"
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="16dp"
-            android:layout_marginLeft="16dp"
+            android:layout_marginLeft="16dp" 
             android:layout_marginBottom="16dp"
             app:cardElevation="6dp"
             app:cardCornerRadius="15dp"
@@ -145,7 +144,7 @@
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
-
+            
             <androidx.cardview.widget.CardView
                 android:id="@+id/cv_Muertes"
                 android:layout_marginTop="8dp"
@@ -239,7 +238,7 @@
             android:textColor="#FFFFFF"
             android:id="@+id/btn_LogoOut"
             android:onClick="cerrarSesion"
-            android:text="Log Out"
+            android:text="@string/log_out"
             android:layout_marginTop="10dp"
             android:layout_width="match_parent"
             android:layout_height="@dimen/height_buttons"

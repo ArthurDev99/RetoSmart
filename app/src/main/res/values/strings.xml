@@ -1,30 +1,32 @@
 <resources>
     <string name="app_name">SmartSeals Co</string>
-    <string name="login">Log in</string>
+    <string name="login">Inicia Sesion</string>
     <string name="Username">Write your username or email</string>
     <string name="paswword">Write your password</string>
-    <string name="btn_LogIn">Sign In</string>
-    <string name="no_account">No have an account?</string>
-    <string name="register"><u>Register now!</u></string>
+    <string name="btn_LogIn">Iniciar Sesion</string>
+    <string name="no_account">¿No tienes una cuenta?</string>
+    <string name="register"><u>¡Regístrate ahora!</u></string>
 
     // Textos de registro
-    <string name="Title_Register">Register Form</string>
-    <string name="user_name">Write your name</string>
-    <string name="lastname">Write your last name</string>
-    <string name="correo"> Write your email</string>
-    <string name="user_password">Create a password</string>
-    <string name="confirm_password">Confirm your password</string>
-    <string name="btm_Register">Send</string>
+    <string name="Title_Register">Formulario de registro</string>
+    <string name="user_name">Ingresa tu nombre</string>
+    <string name="lastname">Ingresa tus apellidos</string>
+    <string name="correo"> Ingresa tu email</string>
+    <string name="user_password">Crea un contraseña</string>
+    <string name="confirm_password">Confirma tu contraseña</string>
+    <string name="btm_Register">Registrar</string>
     <string name="title_activity_dashboard">Dashboard</string>
 
     //DATOS PARA DASHBOARD
-    <string name="cerrar_Sesion">Log out</string>
+    <string name="cerrar_Sesion">Cerrar Sesion</string>
     <string name="nombre_usuario">Nombre de usuario</string>
     <string name="corre_usuario">Correo de usuario</string>
-
-
-
-
+    <string name="Infectados">Infectados</string>
+    <string name="Curados">Curados</string>
+    <string name="muertes">Muertes</string>
+    <string  name="global">Global</string>
+    <string name="more_info">Ver</string>
+    <string name="log_out">Log Out</string>
 
 
 </resources>

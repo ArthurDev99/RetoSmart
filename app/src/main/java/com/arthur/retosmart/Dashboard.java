@@ -40,8 +40,9 @@ public class Dashboard extends AppCompatActivity {
 
     public void cerrarSesion(View view){
 
-        mAuth.signOut();
+
         startActivity(new Intent(this, MainActivity.class));
+        mAuth.signOut(); // CIERRA LA SESION DEL USUARIO
         finish();
 
     }

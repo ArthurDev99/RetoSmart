@@ -63,6 +63,7 @@ public class MainActivity extends AppCompatActivity {
                 if(task.isSuccessful()){
                     startActivity(new Intent(getApplicationContext(),Dashboard.class));
                     Toast.makeText(getApplicationContext(), "Bienvenido: " + email, Toast.LENGTH_SHORT).show();
+                    finish();
                 }else{
                     Toast.makeText(getApplicationContext(), "No se pudo iniciar sesión.: " + email, Toast.LENGTH_SHORT).show();
                 }
