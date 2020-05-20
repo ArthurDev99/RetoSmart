@@ -72,6 +72,7 @@ public class Register extends AppCompatActivity {
                                     Toast.makeText(getApplicationContext(), "Registro exitoso.", Toast.LENGTH_SHORT).show();
                                     Intent login = new Intent(getApplicationContext(), MainActivity.class);
                                     startActivity(login);
+                                    finish();
                                 }else{
                                     Toast.makeText(getApplicationContext(), "Problema al registrar el usuario.", Toast.LENGTH_SHORT).show();
                                 }

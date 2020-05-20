@@ -15,4 +15,16 @@
     <string name="user_password">Create a password</string>
     <string name="confirm_password">Confirm your password</string>
     <string name="btm_Register">Send</string>
+    <string name="title_activity_dashboard">Dashboard</string>
+
+    //DATOS PARA DASHBOARD
+    <string name="cerrar_Sesion">Log out</string>
+    <string name="nombre_usuario">Nombre de usuario</string>
+    <string name="corre_usuario">Correo de usuario</string>
+
+
+
+
+
+
 </resources>

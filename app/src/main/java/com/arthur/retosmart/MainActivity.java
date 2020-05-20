@@ -61,6 +61,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if(task.isSuccessful()){
+                    startActivity(new Intent(getApplicationContext(),Dashboard.class));
                     Toast.makeText(getApplicationContext(), "Bienvenido: " + email, Toast.LENGTH_SHORT).show();
                 }else{
                     Toast.makeText(getApplicationContext(), "No se pudo iniciar sesión.: " + email, Toast.LENGTH_SHORT).show();
@@ -74,7 +75,13 @@ public class MainActivity extends AppCompatActivity {
         startActivity(register);
     }
 
+    @Override
+    protected void onStart() {
+        super.onStart();
 
-
-
+        if(mAuth.getCurrentUser()!=null){ // VALIDA QUE SI EL USUARIO ESTÁ LOGGEADO ENTONCES QUE LO MANDE DIRECTAMENTE AL DASHBOARD
+            startActivity(new Intent(this,Dashboard.class));
+            finish();
+        }
+    }
 }
