@@ -29,6 +29,7 @@ public class Dashboard extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getSupportActionBar().hide();
         setContentView(R.layout.dashboard_activity);
         mAuth = FirebaseAuth.getInstance();
         mDatadatabase= FirebaseDatabase.getInstance().getReference();
@@ -51,7 +52,7 @@ public class Dashboard extends AppCompatActivity {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 if(dataSnapshot.exists()){
-                    nombre.setText("Nombre: " + dataSnapshot.child("Nombre").getValue().toString()); // OBTIENE EL NOMBRE DE USUARIO
+                    nombre.setText(dataSnapshot.child("Nombre").getValue().toString()); // OBTIENE EL NOMBRE DE USUARIO
                     correo.setText(dataSnapshot.child("Correo").getValue().toString()); // OBTIENE EL CORREO DEL USUARIO
                 }
             }
