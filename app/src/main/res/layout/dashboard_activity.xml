@@ -319,6 +319,7 @@
             android:textColor="#FFFFFF"
             android:id="@+id/btn_LogoOut"
             android:onClick="cerrarSesion"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
             android:text="Log Out"
             android:layout_marginTop="5dp"
             android:layout_width="match_parent"
