@@ -28,6 +28,8 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.Calendar;
+import java.util.GregorianCalendar;
 
 public class Dashboard extends AppCompatActivity {
 
@@ -44,6 +46,7 @@ public class Dashboard extends AppCompatActivity {
     private TextView totalCurados;
     private TextView nuevasMuertes;
     private TextView totalMuertes;
+    private TextView fecha;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,6 +58,9 @@ public class Dashboard extends AppCompatActivity {
         mDatadatabase= FirebaseDatabase.getInstance().getReference();
         nombre = (TextView) findViewById(R.id.tv_NombreUsuario);
         correo = (TextView) findViewById(R.id.tv_CorreoUsuario);
+        fecha =(TextView) findViewById(R.id.fecha);
+        fecha.setText(obtenerFecha());
+
         inicializarVariables();
         informacionDeUsuario();
         obtenerDatosDeApi();
@@ -161,5 +167,20 @@ public class Dashboard extends AppCompatActivity {
         totalCurados = (TextView) findViewById(R.id.Total_Curados);
         nuevasMuertes = (TextView) findViewById(R.id.Nuevas_Muertes);
         totalMuertes = (TextView) findViewById(R.id.Total_Muertes);
+    }
+
+    public String obtenerFecha(){
+        Calendar fecha = GregorianCalendar.getInstance();
+
+        String dia = String.valueOf(fecha.get(Calendar.DAY_OF_MONTH));
+        String mes = String.valueOf(Integer.parseInt(String.valueOf(fecha.get(Calendar.MONTH)))+1);
+        String anio = String.valueOf(fecha.get(Calendar.YEAR));
+        if(Integer.parseInt(dia)<10){
+            dia = "0"+dia;
+        }else if(Integer.parseInt(mes)<10){
+            mes="0"+mes;
+        }
+
+        return (dia+"/"+mes+"/"+anio);
     }
 }

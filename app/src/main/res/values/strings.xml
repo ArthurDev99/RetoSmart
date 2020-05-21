@@ -32,6 +32,7 @@
     <string name="muertes">Muertes</string>
     <string  name="global">Global</string>
     <string name="tv_DatosGlobales">Datos Globales</string>
+    <string name="fecha_Actual">Fecha Actual</string>
     <string name="more_info">Ver mas</string>
     <string name="log_out">Log Out</string>
     <string name="nuevos_casos">Hoy: </string>
