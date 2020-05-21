@@ -1,20 +1,26 @@
 <resources>
     <string name="app_name">SmartSeals Co</string>
     <string name="login">Inicia Sesion</string>
-    <string name="Username">Write your username or email</string>
-    <string name="paswword">Write your password</string>
+    <string name="Username">Ingresa tu correo electrónico</string>
+    <string name="paswword">Ingresa tu contraseña</string>
     <string name="btn_LogIn">Iniciar Sesion</string>
     <string name="no_account">¿No tienes una cuenta?</string>
     <string name="register"><u>¡Regístrate ahora!</u></string>
 
     // Textos de registro
     <string name="Title_Register">Formulario de registro</string>
+    <string name="title_nombre">Nombres:</string>
+    <string name="title_apellidos">Apellidos:</string>
+    <string name="title_email">Email:</string>
+    <string name="title_contrasena">Contraseña:</string>
+    <string name="title_confirm_contrasena">Confirma tu contrasena:</string>
     <string name="user_name">Ingresa tu nombre</string>
     <string name="lastname">Ingresa tus apellidos</string>
     <string name="correo"> Ingresa tu email</string>
     <string name="user_password">Crea un contraseña</string>
     <string name="confirm_password">Confirma tu contraseña</string>
     <string name="btm_Register">Registrar</string>
+    <string name="cancelar">Cancelar</string>
     <string name="title_activity_dashboard">Dashboard</string>
 
     //DATOS PARA DASHBOARD

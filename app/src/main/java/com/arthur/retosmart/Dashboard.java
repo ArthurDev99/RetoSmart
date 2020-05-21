@@ -50,7 +50,8 @@ public class Dashboard extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         getSupportActionBar().hide();
         setContentView(R.layout.dashboard_activity);
-        mAuth = FirebaseAuth.getInstance();
+        // METODOS ADICIONALES
+        mAuth = FirebaseAuth.getInstance(); // OBTIENE LA REFERENCIA DE LA BASE DE DATOS EN FIREBASE
         mDatadatabase= FirebaseDatabase.getInstance().getReference();
         nombre = (TextView) findViewById(R.id.tv_NombreUsuario);
         correo = (TextView) findViewById(R.id.tv_CorreoUsuario);
@@ -113,6 +114,9 @@ public class Dashboard extends AppCompatActivity {
             JSONObject jsonObject = new JSONObject(json);
             String global = jsonObject.getString("Global");
             jsonObject = new JSONObject(global);
+
+
+            // LLENAR TEXTVIEW DE INFERFAZ
 
             // CASOS
             asignarValorDeApi(nuevosCasos,jsonObject.getString("NewConfirmed"));

@@ -43,7 +43,20 @@ public class Register extends AppCompatActivity {
         inicializarVariables();
     }
 
-    public void registrarUsuario(View view){
+    public void validarRegistro(View view){
+        if(!nombre.getText().toString().isEmpty() && !apellidos.getText().toString().isEmpty() && !correo.getText().toString().isEmpty()
+        && !contrasena.getText().toString().isEmpty() && !confirmContrasena.getText().toString().isEmpty()){
+            if(confirmContrasena.getText().toString().equals(contrasena.getText().toString())){
+                registrarUsuario();
+            }else{
+                Toast.makeText(this, "Las contraseñas ingresadas no coinciden", Toast.LENGTH_SHORT).show();
+            }
+        }else{
+            Toast.makeText(this, "Todos los campos son obligatorios.", Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    public void registrarUsuario(){
         try {
             // OBTENCIÓN DE DATOS
             final Usuarios user = new Usuarios();
@@ -109,5 +122,10 @@ public class Register extends AppCompatActivity {
         correo.setText("");
         contrasena.setText("");
         confirmContrasena.setText("");
+    }
+
+    public void cancelar(View view){
+        startActivity(new Intent(this, MainActivity.class));
+        finish();
     }
 }
