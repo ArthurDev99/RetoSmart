@@ -34,6 +34,18 @@
             android:text="@string/corre_usuario"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_DatosGlobales"
+            android:layout_marginTop="10dp"
+            android:textSize="24sp"
+            android:text="@string/tv_DatosGlobales"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_below="@+id/tv_CorreoUsuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
         <ImageView
             android:id="@+id/img_User"
             android:layout_alignParentRight="true"
@@ -96,6 +108,22 @@
                     android:layout_height="wrap_content"
                     />
 
+                <TextView
+                    android:id="@+id/Nuevos_Casos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/nuevos_casos"
+                    />
+
+                <TextView
+                    android:id="@+id/Total_Casos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/total_cases"
+                    />
+
 
             </LinearLayout>
 
@@ -139,6 +167,22 @@
                         android:src="@drawable/ic_desinfected"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        />
+
+                    <TextView
+                        android:id="@+id/Nuevos_Curados"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/Nuevos_Curados"
+                        />
+
+                    <TextView
+                        android:id="@+id/Total_Curados"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/total_curados"
                         />
 
 
@@ -185,6 +229,22 @@
                         android:layout_height="wrap_content"
                         />
 
+                    <TextView
+                        android:id="@+id/Nuevas_Muertes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/muertes_hoy"
+                        />
+
+                    <TextView
+                        android:id="@+id/Total_Muertes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/total_muertes"
+                        />
+
 
                 </LinearLayout>
 
@@ -228,6 +288,17 @@
                         android:layout_height="wrap_content"
                         />
 
+                    <Button
+                        android:id="@+id/btn_Global"
+                        android:layout_marginTop="5dp"
+                        android:textSize="14dp"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                        android:textColor="@color/color_text_button"
+                        android:text="@string/more_info"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="@drawable/border_redondeados"/>
+
 
                 </LinearLayout>
 
@@ -240,7 +311,7 @@
             android:id="@+id/btn_LogoOut"
             android:onClick="cerrarSesion"
             android:text="Log Out"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="5dp"
             android:layout_width="match_parent"
             android:layout_height="@dimen/height_buttons"
             android:background="@drawable/border_redondeados"/>

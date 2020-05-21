@@ -25,8 +25,15 @@
     <string name="Curados">Curados</string>
     <string name="muertes">Muertes</string>
     <string  name="global">Global</string>
-    <string name="more_info">Ver</string>
+    <string name="tv_DatosGlobales">Datos Globales</string>
+    <string name="more_info">Ver mas</string>
     <string name="log_out">Log Out</string>
+    <string name="nuevos_casos">Hoy: </string>
+    <string name="total_cases">Total:</string>
+    <string name="Nuevos_Curados">Hoy:</string>
+    <string name="total_curados">Total:</string>
+    <string name="muertes_hoy">Hoy:</string>
+    <string name="total_muertes">Total:</string>
 
 
 </resources>
